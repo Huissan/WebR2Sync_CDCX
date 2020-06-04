@@ -1,0 +1,31 @@
+{
+  "name": "websync2",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "ali-oss": "^4.7.3",
+    "arraybuffer-to-buffer": "0.0.4",
+    "body-parser": "^1.19.0",
+    "co": "^4.6.0",
+    "compressing": "^1.5.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "^4.1.1",
+    "ejs": "~2.5.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "hashmap": "^2.0.6",
+    "lz4": "^0.6.3",
+    "md5": "^2.2.1",
+    "morgan": "^1.10.0",
+    "pako": "^1.0.11",
+    "rabinjs": "0.0.1",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.2.0",
+    "stream-to-buffer": "^0.1.0",
+    "yargs": "^15.3.1",
+    "zlib": "^1.0.5"
+  }
+}

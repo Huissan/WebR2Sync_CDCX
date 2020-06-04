@@ -1,0 +1,14 @@
+(node:6723) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+[0mGET / [32m200 [0m15.955 ms - 1558[0m
+[0mGET /stylesheets/style.css [32m200 [0m5.073 ms - 111[0m
+[0mGET /js/md5.js [32m200 [0m3.187 ms - 9506[0m
+[0mGET /js/murmurhash3.js [32m200 [0m0.358 ms - 25429[0m
+[0mGET /js/siphash.js [32m200 [0m0.830 ms - 3540[0m
+[0mGET /js/sha1.js [32m200 [0m1.060 ms - 12137[0m
+[0mGET /js/socket.io-1.4.5.js [32m200 [0m1.124 ms - 97690[0m
+[0mGET /js/hash123.js [32m200 [0m1.157 ms - 10021[0m
+[0mGET /js/jquery-1.11.1.js [32m200 [0m1.161 ms - 282766[0m
+[0mGET /js/fastcdc.js [32m200 [0m3.069 ms - 2620[0m
+[0mGET /js/sync-client.js [32m200 [0m3.121 ms - 9717[0m
+[0mGET /js/bit-sync.js [32m200 [0m3.161 ms - 20266[0m
+[0mGET /favicon.ico [32m200 [0m1.244 ms - 9662[0m

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5-els.js"></script>
+    <![endif]-->
+    
+    <meta http-equiv="Pragma" content="no-cache">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="application/javascript" src="/js/md5.js"></script>
+    <script type="application/javascript" src="js/murmurhash3.js"></script>
+    <script type="application/javascript" src="js/siphash.js"></script>
+    <script type="application/javascript" src="js/sha1.js"></script>
+    <script type="application/javascript" src="js/socket.io-1.4.5.js"></script>
+    <script type="application/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="application/javascript" src="/js/hash123.js"></script>
+    <script type="application/javascript" src="/js/fastcdc.js"></script>
+    <script type="application/javascript" src="/js/bit-sync.js"></script>
+    <script type="application/javascript" src="/speedtest_worker.js"></script>
+    <script type="application/javascript" src="/js/speedtest.js"></script>
+    <script type="application/javascript" src="/js/netaware.js"></script>
+    <script type="application/javascript" src="/js/lz4.min.js"></script>
+    <script type="application/javascript" src="/js/pako.min.js"></script>
+    <script type="application/javascript" src="/js/sync-client.js"></script>
+
+    <link rel="shortcut icon" href="/favicon.ico"/>
+  </head>
+  <body>
+  <style>
+    #byte_content {
+      margin: 5px 0;
+      max-height: 100px;
+      overflow-y: auto;
+      overflow-x: hidden;
+    }
+    #byte_range { margin-top: 5px; }
+  </style>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <span>
+      <input type="file" id="files" name="file" />
+      <button id="load" onclick="load_blocks()">upload</button>
+    </span>
+  <p><span id="result"></span></p>
+
+  <p>
+    <button id="test_start_btn" onclick="start_test()">开始测速</button>
+    <button id="test_stop_btn" onclick="stop_test()" hidden=true>停止测速</button>
+    <span id="speed"></span>
+  </p>
+  <script>
+    function start_test() {
+        var res = bdwLock.P('speed');
+        if (res === 'speed') {
+            $('#speed').text("正在进行速度测试！");
+            setTimeout(() => { $('#speed').text(""); }, 2000);
+        } else {
+            $('#test_stop_btn').show();
+            $('#test_start_btn').hide();
+            if (res === 'sync') {
+                $('#speed').text("注意：由于当前的文件传输正在您的一部分带宽，测量结果可能有偏差！");
+                setTimeout(() => { $('#speed').text(""); }, 2000);
+            } else {
+                $('#speed').text("");
+            }
+            speedTest.start();
+        } 
+    }
+
+    function stop_test() {
+        $('#test_stop_btn').hide();
+        $('#test_start_btn').show();
+        speedTest.abort();
+    }
+  </script>
+  </body>
+</html>
