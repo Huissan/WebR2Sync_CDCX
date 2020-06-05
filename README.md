@@ -25,7 +25,7 @@ Improvements compared to WebR2Sync+(https://github.com/WebDeltaSync/WebR2sync_pl
 > 
 > Implements of chunking of data and matching of duplicate data blocks: WebR2sync_CDCX/bit-sync.js
 > 
-> Implement of generating delta patch: 
+> Implement of generating delta patch: WebR2sync_CDCX/sync-client.js
 > 
 > Implement of CDC: WebR2sync_CDC/public/js/fastcdc.js
 > 
