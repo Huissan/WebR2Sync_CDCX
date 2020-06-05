@@ -57,7 +57,7 @@ var io = require('socket.io')(server, {
 });
 
 var direct_stream = false;
-const mode = 'test-modify'; // formal, test-full, test-modify
+const mode = 'formal'; // formal, test-full, test-modify
 
 
 server.listen(8005);

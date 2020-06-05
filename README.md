@@ -16,14 +16,16 @@ Improvements compared to WebR2Sync+(https://github.com/WebDeltaSync/WebR2sync_pl
 >> 
 >> \>\> node bin/www
 >> 
->> \>\> Now ,visit localhost:8005 on your browser
+>> \>\> Now, visit localhost:8005 on your browser
 
 ## Document
 > Client: WebR2sync_CDCX/public/js/sync-client.js
 > 
 > Server: WebR2sync_CDCX/app.js
 > 
-> Implements of chunking, matching and generating delta patch: WebR2sync_CDC/bit-sync.js
+> Implements of chunking of data and matching of duplicate data blocks: WebR2sync_CDCX/bit-sync.js
+> 
+> Implement of generating delta patch: 
 > 
 > Implement of CDC: WebR2sync_CDC/public/js/fastcdc.js
 > 
