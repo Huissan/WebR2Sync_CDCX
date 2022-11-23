@@ -23,7 +23,7 @@
     "pako": "^1.0.11",
     "rabinjs": "0.0.1",
     "serve-favicon": "^2.5.0",
-    "socket.io": "^2.2.0",
+    "socket.io": "^2.5.0",
     "stream-to-buffer": "^0.1.0",
     "yargs": "^15.3.1",
     "zlib": "^1.0.5"
